@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <div id="contenedor">
+        
+        <div class="cabecera">
+            <h1>Cron </h1>
+            <img class="cronometro-icon" src="./icons/reloj.png" alt="icono-cronómetro">
+            <h1>metro </h1>
+        </div>
+        <div class="container-cron">
+		    <div class="reloj" id="Horas">00</div>
+		    <div class="reloj" id="Minutos">:00</div>
+		    <div class="reloj" id="Segundos">:00</div>
+		    <div class="reloj" id="Centesimas">:00</div>
+        </div>
+
+        <div class="container-btn">
+            <button class="boton" id="inicio" onclick="inicio();">
+                <p class="btn-txt">Start</p>
+            </button>
+
+            <button class="boton" id="parar" onclick="parar();" disabled>
+                <p class="btn-txt">Stop</p>
+            </button>
+
+            <button class="boton" id="continuar" onclick="inicio();" disabled>
+                <p class="btn-txt">Continue</p>
+            </button>
+
+            <button class="boton" id="reinicio" onclick="reinicio();" disabled>
+                <p class="btn-txt">Reset</p>
+            </button>
+            
+        </div>
+
+	</div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
